@@ -1,0 +1,23 @@
+{
+  "name": "testingapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "npx cypress open",
+    "cypress:run": "npx cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sebastianrad/testingAPI.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sebastianrad/testingAPI/issues"
+  },
+  "homepage": "https://github.com/sebastianrad/testingAPI#readme",
+  "devDependencies": {
+    "cypress": "^8.7.0"
+  }
+}

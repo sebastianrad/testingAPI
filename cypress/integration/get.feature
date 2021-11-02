@@ -30,27 +30,17 @@ Feature: Testing GET API
             | george.edwards@reqres.in   |
             | rachel.howell@reqres.in    |
 
-     Scenario: check if per_page value is eqal with the data (daca sunt atatea date)
-    Then per page is eqal with the lenght of data
+    Scenario: check if per_page value is eqal with the data (daca sunt atatea date)
+        Then per page is eqal with the lenght of data
 
-     Scenario: check the first id is 7
-     Then first id should be 7
+    Scenario: check the first id is 7
+        Then first id should be 7
 
-     Scenario: check to se if we have duplicate id
-     Then check to see if we have duplicates
+    Scenario: check to se if we have duplicate id
+        Then check to see if we have duplicates
 
-    # Scenario: check to see if we have duplicate persons
-    #
-    #
-    # Given page is loaded and the status is 200
-    # Then the keys are avaible
-    # |keys|
-    # |page|
-    # |per_page|
-    # |total|
-    # |total_pages|
-    # |data|
-    # |support|
+    Scenario: check to see if we have duplicate persons
+        Then check to see if we have a duplicate person
 
     Scenario: check the keys for body.data
         Then the keys are avaible

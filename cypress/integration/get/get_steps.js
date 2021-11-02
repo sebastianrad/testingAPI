@@ -60,7 +60,17 @@ Then('check to see if we have duplicates',()=>{
         .should((response) => {
             for (let i = 0; i < response.body.data.length; i++) {
                 el.push(response.body.data[i].id)
-              //  expect(response.body.data[i].email).to.eq(bodyValues[i])
+            }
+        })
+        cy.log(Page.checkDuplicates(el))
+        cy.log( expect(Page.checkDuplicates(el)).to.eq(false))
+})
+Then('check to see if we have a duplicate person',()=>{
+    let el= []
+    cy.get('@page')
+        .should((response) => {
+            for (let i = 0; i < response.body.data.length; i++) {
+                el.push(response.body.data[i].first_name)
             }
         })
         cy.log(Page.checkDuplicates(el))

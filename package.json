@@ -7,6 +7,9 @@
     "cypress:open": "npx cypress open",
     "cypress:run": "npx cypress run"
   },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sebastianrad/testingAPI.git"
@@ -18,6 +21,8 @@
   },
   "homepage": "https://github.com/sebastianrad/testingAPI#readme",
   "devDependencies": {
-    "cypress": "^8.7.0"
+    "cucumber": "^7.0.0-rc.0",
+    "cypress": "^8.7.0",
+    "cypress-cucumber-preprocessor": "^4.3.0"
   }
 }

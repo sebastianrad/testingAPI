@@ -3,13 +3,12 @@ export const Page = {
     getRequest() {
         return cy.request("/users?page=2")
     },
+    postRequest(){
+        return cy.request('/user')
+    },
     getValuesFromTabel(dataT) {
         let obj = dataT.hashes()
-        for (let i = 0; i < obj.length; i++) {
-            let details = Object.values(obj[i])
-            this.test = details[i]
-        }
-        return this.test;
+        return obj;
     },
     getVal(dataTabel) {
         let objs = dataTabel.hashes()
